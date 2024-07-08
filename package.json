@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/styles.css -o ./public/styles.css"
+  },
+  "dependencies": {
+    "animejs": "^3.2.2",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39"
+  }
+}

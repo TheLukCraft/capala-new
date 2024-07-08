@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div
+      id="social_media"
+      class="fixed bottom-5 left-5 flex flex-col items-center justify-center gap-2 transform transition-transform ease-out duration-500 social-icons"
+    >
+      <a href="https://github.com/TheLukCraft" target="_blank"
+        ><img src="img/github.png" alt="GitHub"
+      /></a>
+      <a href="https://www.linkedin.com/in/lukaszcapala/" target="_blank"
+        ><img src="img/linkedin.png" alt="LinkedIn"
+      /></a>
+      <a href="mailto:lukasz@capala.pl"
+        ><img src="img/email.png" alt="Email"
+      /></a>
+      <a href="tel:+48667711900"><img src="img/phone.png" alt="Phone" /></a>
+      <a href="https://www.tiktok.com/@thelukcraft" target="_blank"
+        ><img src="img/tik-tok.png" alt="TikTok"
+      /></a>
+    </div>
+    <div class="container mx-auto px-24 pt-4">
+      <nav class="flex justify-between">
+        <img
+          src="img/logo-no-background.png"
+          alt="Logo"
+          class="h-auto max-w-sm basis-4/12"
+        />
+        <ul class="flex justify-end basis-8/12">
+          <div class="flex align-center max-sm:hidden">
+            <li>
+              <button><span>01. </span>O mnie</button>
+            </li>
+            <li>
+              <button><span>02. </span>Umiejętności</button>
+            </li>
+            <li>
+              <button><span>03. </span>Portfolio</button>
+            </li>
+            <li>
+              <button><span>04. </span>Kontakt</button>
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <section class="flex justify-center items-center" id="about">
+        <div class="basis-1/2">
+          <p class="py-2 tracking-wider whitespace-nowrap">
+            Jestem <span class="font-medium">Łukasz Capała</span>
+          </p>
+          <p class="py-2 font-light italic">Full Stack Developer</p>
+          <button
+            class="my-4 rounded-md border-2 shadow-sm text-xl p-3 font-semibold"
+          >
+            Kontakt
+          </button>
+        </div>
+        <div class="basis-1/2">
+          <img src="img/me.png" alt="developer" />
+        </div>
+      </section>
+      <section
+        id="skills"
+        class="flex flex-col items-center justify-center h-full"
+      >
+        <h2 class="py-7">Umiejętności</h2>
+        <div
+          id="skills-container"
+          class="flex flex-wrap gap-4 justify-center"
+        ></div>
+      </section>
+      <section id="projects">
+        <h2 class="py-7 flex justify-center">Projekty</h2>
+        <div class="grid grid-cols-4">
+          <div class="col-span-3 pr-28">
+            <h3 id="project-name">Nazwa projektu</h3>
+            <p class="pt-10" id="project-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              aspernatur iste dolore illum nemo cum veniam reiciendis molestias
+              tenetur accusantium tempore dolor ab voluptates, error, quidem
+              voluptate vel tempora praesentium?
+            </p>
+            <div class="flex gap-4">
+              <a
+                id="github-link"
+                href="https://github.com/TheLukCraft"
+                target="_blank"
+              >
+                <img src="img/github.png" alt="GitHub" />
+              </a>
+              <a
+                id="live-link"
+                href="https://github.com/TheLukCraft"
+                target="_blank"
+              >
+                <img src="img/live.png" alt="Live" />
+              </a>
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col">
+            <h3>Projekty</h3>
+            <ul class="py-10" id="projects-list">
+              <li>Projekt 1</li>
+              <li>Projekt 2</li>
+              <li>Projekt 3</li>
+              <li>Projekt 4</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script defer src="scripts/projects.js"></script>
+    <script src="scripts/skills.js"></script>
+    <script src="anime.min.js"></script>
+    <script src="scripts/scroll.js"></script>
+  </body>
+</html>
