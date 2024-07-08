@@ -956,6 +956,18 @@ nav li button:hover{
   opacity: 0.8;
 }
 
+#projects {
+  transition: transform 1s ease-in-out, background-color 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+#projects.rotating {
+  border: 2px solid #4a90e2;
+  /* Dodanie obwódki */
+  background-color: #f0f8ff;
+  /* Jaśniejsze tło */
+}
+
 .hover\:underline:hover{
   text-decoration-line: underline;
 }

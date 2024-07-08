@@ -69,3 +69,12 @@ nav li button {
 #projects ul li {
   @apply text-3xl font-bold opacity-80 tracking-wide leading-relaxed;
 }
+#projects {
+  transition: transform 1s ease-in-out, background-color 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+#projects.rotating {
+  border: 2px solid #4a90e2; /* Dodanie obwódki */
+  background-color: #f0f8ff; /* Jaśniejsze tło */
+}
